@@ -56,7 +56,7 @@ main{
     display: grid;
     justify-content: center;
     grid-template-areas: "tacoAguja"
-                         "botasOtoñales"
+                         "botasOtoniales"
                          "zapatillasDeportivas";
 }
 
@@ -73,15 +73,15 @@ main{
     margin-top: 2rem;
 }
 
-.botasOtoñales{
-    grid-area: botasOtoñales;
+.botasOtoniales{
+    grid-area: botasOtoniales;
     font-size: large;
     font-weight: bolder;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.botasOtoñales p{
+.botasOtoniales p{
     text-align: center;
     margin-top: 2rem;
 }
@@ -150,7 +150,7 @@ main{
 
 /*otoño/invierno*/
 
-.otoñoInvierno{
+.otonioInvierno{
     display: grid;
     justify-content: center;
     grid-template-areas: "sacoBeige"
