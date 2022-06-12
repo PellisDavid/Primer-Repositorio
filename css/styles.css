@@ -1,0 +1,331 @@
+/*html*/
+*{
+    font-family: 'Gentium Plus', serif;
+}
+
+/*menu*/
+
+.menu{
+    background-color: pink;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.logoHome{
+    max-width: 40%;
+    max-height: 40%;
+}
+
+main{
+    background-image: url(../img/imagenfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.conocenos{
+    text-align: center;
+    text-decoration: solid;
+    max-width: max-content;
+    color: black;
+    font-weight: bolder;
+}
+
+.piePagina{
+    background-color: pink;
+}
+
+.piePagina h2{
+    font-size: large;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+/*calzado*/
+
+.calzado{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "tacoAguja"
+                         "botasOtoñales"
+                         "zapatillasDeportivas";
+}
+
+.tacoAguja{
+    grid-area: tacoAguja;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.tacoAguja p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.botasOtoñales{
+    grid-area: botasOtoñales;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.botasOtoñales p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.zapatillasDeportivas{
+    grid-area: zapatillasDeportivas;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.zapatillasDeportivas p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*ofertas*/
+
+.ofertas{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "zapatillasAltas"
+                         "remerasEstampadas"
+                         "jeanTejano";
+}
+
+.zapatillasAltas{
+    grid-area: zapatillasAltas;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.zapatillasAltas p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.remerasEstampadas{
+    grid-area: remerasEstampadas;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.remerasEstampadas p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.jeanTejano{
+    grid-area: jeanTejano;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.jeanTejano p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*otoño/invierno*/
+
+.otoñoInvierno{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "sacoBeige"
+                         "sacoGris"
+                         "sacoMarron"
+                         "camperonNegro"
+                         "camperaNegra"
+                         "camperaFrizada";
+}
+
+.sacoBeige{
+    grid-area: sacoBeige;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sacoBeige p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sacoGris{
+    grid-area: sacoGris;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sacoGris p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sacoMarron{
+    grid-area: sacoMarron;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sacoMarron p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.camperonNegro{
+    grid-area: camperonNegro;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.camperonNegro p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.camperaNegra{
+    grid-area: camperaNegra;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.camperaNegra p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.camperaFrizada{
+    grid-area: camperaFrizada;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.camperaFrizada p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*primavera/verano*/
+
+.primaveraVerano{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "conjuntoMusolina"
+                         "conjuntoSeda"
+                         "enteritoWaffle"
+                         "enteritoSeda"
+                         "conjuntoAngel"
+                         "conjuntoClasico";
+}
+
+.conjuntoMusolina{
+    grid-area: ;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.conjuntoMusolina p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.conjuntoSeda{
+    grid-area: conjuntoSeda;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.conjuntoSeda p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.enteritoWaffle{
+    grid-area: enteritoWaffle;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.enteritoWaffle p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.enteritoSeda{
+    grid-area: enteritoSeda;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.enteritoSeda p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.conjuntoAngel{
+    grid-area: conjuntoAngel;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.conjuntoAngel p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.conjuntoClasico{
+    grid-area: conjuntoClasico;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.conjuntoClasico p{
+    text-align: center;
+    margin-top: 2rem;
+}
