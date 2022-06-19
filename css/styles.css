@@ -18,7 +18,7 @@ header{
 }
 
 .menu{
-    background-color: pink;
+    background-image: linear-gradient(to right, rgb(253, 115, 138), rgb(248, 203, 210));
     text-align: center;
     padding: 5px;
     font-weight: bolder;
@@ -26,6 +26,10 @@ header{
 
 .nav-item{
     list-style: none;
+}
+
+.nav-link:hover{
+    color: pink;
 }
 
 .logoHome{
@@ -58,7 +62,7 @@ main{
 }
 
 .piePagina{
-    background-color: pink;
+    background-image: linear-gradient(to right, rgb(253, 115, 138), rgb(248, 203, 210));
     background-size: cover;
 }
 
