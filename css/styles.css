@@ -69,6 +69,7 @@ main{
 .piePagina h2{
     font-size: large;
     text-align: center;
+    font-weight: bolder;
 }
 
 .redes{
@@ -90,39 +91,33 @@ main{
     grid-area: tacoAguja;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.tacoAguja p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .botasOtoniales{
     grid-area: botasOtoniales;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.botasOtoniales p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .zapatillasDeportivas{
     grid-area: zapatillasDeportivas;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.zapatillasDeportivas p{
+/* parrafos de las imagenes*/
+
+.parrafoImagen{
     text-align: center;
     margin-top: 2rem;
+    font-size: large;
+    font-weight: bolder;
 }
 
 /*ofertas*/
@@ -139,39 +134,24 @@ main{
     grid-area: zapatillasAltas;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.zapatillasAltas p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .remerasEstampadas{
     grid-area: remerasEstampadas;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.remerasEstampadas p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .jeanTejano{
     grid-area: jeanTejano;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.jeanTejano p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /*otoño/invierno*/
@@ -191,78 +171,48 @@ main{
     grid-area: sacoBeige;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.sacoBeige p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .sacoGris{
     grid-area: sacoGris;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.sacoGris p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .sacoMarron{
     grid-area: sacoMarron;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.sacoMarron p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .camperonNegro{
     grid-area: camperonNegro;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.camperonNegro p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .camperaNegra{
     grid-area: camperaNegra;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.camperaNegra p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .camperaFrizada{
     grid-area: camperaFrizada;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.camperaFrizada p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /*primavera/verano*/
@@ -282,79 +232,140 @@ main{
     grid-area: conjuntoMusolina;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.conjuntoMusolina p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .conjuntoSeda{
     grid-area: conjuntoSeda;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.conjuntoSeda p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .enteritoWaffle{
     grid-area: enteritoWaffle;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.enteritoWaffle p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .enteritoSeda{
     grid-area: enteritoSeda;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.enteritoSeda p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .conjuntoAngel{
     grid-area: conjuntoAngel;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.conjuntoAngel p{
-    text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .conjuntoClasico{
     grid-area: conjuntoClasico;
     font-size: large;
     font-weight: bolder;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.conjuntoClasico p{
-    text-align: center;
-    margin-top: 2rem;
+/*imagenes pages tamaños*/
+
+.imgMuestra{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300px;
+    height: auto;
+    margin: auto;
 }
 
-/*media*/
+/* media tablet*/
 
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .nav-link{
+        font-size: large;
+    }
+
+    .logoHome{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    
+    .carrusel, .carousel-inner, .carousel-item, .carImg{
+        width: 28rem;
+        height: 30rem;
+    }
+
+    .conocenos{
+        font-size: larger;
+    }
+
+    .piePagina h2{
+        font-size: larger;
+    }
+
+    .imgMuestra{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 400px;
+        height: auto;
+        margin: auto;
+    }
+
+    .parrafoImagen{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: larger;
+    }
+    
+}
+
+/* media pc*/
+
+@media (min-width: 992px) {
+
+    .nav-link{
+        font-size: larger;
+    }
+
+    .logoHome{
+        max-width: 60%;
+        max-height: 60%;
+    }
+    
+    .carrusel, .carousel-inner, .carousel-item, .carImg{
+        width: 36rem;
+        height: 38rem;
+    }
+
+    .conocenos{
+        font-size: x-large;
+    }
+
+    .piePagina h2{
+        font-size: x-large;
+    }
+
+    .imgMuestra{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+
+    .parrafoImagen{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: larger;
+    }
+    
+}
