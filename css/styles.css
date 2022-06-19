@@ -1,9 +1,21 @@
 /*html*/
 *{
     font-family: 'Gentium Plus', serif;
+    box-sizing: border-box;
 }
 
 /*menu*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand{
+    margin-right: 0%;
+    max-width: 80%;
+}
 
 .menu{
     background-color: pink;
@@ -19,6 +31,15 @@
 .logoHome{
     max-width: 40%;
     max-height: 40%;
+}
+
+.carrusel, .carousel-inner, .carousel-item, .carImg{
+    width: 18rem;
+    height: 20rem;
+}
+
+.carrusel{
+    margin: auto;
 }
 
 main{
@@ -38,6 +59,7 @@ main{
 
 .piePagina{
     background-color: pink;
+    background-size: cover;
 }
 
 .piePagina h2{
@@ -253,7 +275,7 @@ main{
 }
 
 .conjuntoMusolina{
-    grid-area: ;
+    grid-area: conjuntoMusolina;
     font-size: large;
     font-weight: bolder;
     margin-top: 5rem;
@@ -329,3 +351,6 @@ main{
     text-align: center;
     margin-top: 2rem;
 }
+
+/*media*/
+
