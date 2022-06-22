@@ -1,0 +1,81 @@
+//import
+
+@import "utilities/variables";
+
+/*html*/
+
+*{
+    font-family: $font-family;
+    box-sizing: border-box;
+}
+
+/*menu*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .menu{
+        background-image: linear-gradient(to right, $bg-color1, $bg-color2);
+        text-align: $align;
+        padding: 5px;
+        font-weight: $fontW;
+        .logoHome{
+            max-width: $logSize;
+            max-height: $logSize;
+        }
+        .navbar-brand{
+            margin-right: 0%;
+            max-width: 80%;
+        }
+        .nav-item{
+            list-style: none;
+            .nav-link:hover{
+                color: $nlColor;
+            }
+        }
+    }
+}
+
+/*main*/
+
+main{
+    background-image: url(../img/imagenfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    .conocenos{
+        text-align: $align;
+        text-decoration: $deco;
+        max-width: max-content;
+        color: black;
+        font-weight: $fontW;
+    }
+    .carrusel{
+        margin: auto;
+    }
+    .carrusel, .carousel-inner, .carousel-item, .carImg{
+        width: $ancho;
+        height: $alto;
+    }
+}
+
+/*footer*/
+
+.piePagina{
+    background-image: linear-gradient(to right, $bg-color1, $bg-color2);
+    h2{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+    }
+    .redes{
+        display: flex;
+        justify-content: $justCenter;
+    }
+    h3{
+        font-size: x-small;
+        text-align: end;
+        font-weight: $fontW;
+    }
+}

@@ -1,0 +1,58 @@
+/*html*/
+* {
+  font-family: "Gentium Plus", serif;
+  box-sizing: border-box; }
+
+/*menu*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  header .menu {
+    background-image: linear-gradient(to right, #fd738a, #f8cbd2);
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder; }
+    header .menu .logoHome {
+      max-width: 40%;
+      max-height: 40%; }
+    header .menu .navbar-brand {
+      margin-right: 0%;
+      max-width: 80%; }
+    header .menu .nav-item {
+      list-style: none; }
+      header .menu .nav-item .nav-link:hover {
+        color: pink; }
+
+/*main*/
+main {
+  background-image: url(../img/imagenfondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px; }
+  main .conocenos {
+    text-align: center;
+    text-decoration: solid;
+    max-width: max-content;
+    color: black;
+    font-weight: bolder; }
+  main .carrusel {
+    margin: auto; }
+  main .carrusel, main .carousel-inner, main .carousel-item, main .carImg {
+    width: 18rem;
+    height: 20rem; }
+
+/*footer*/
+.piePagina {
+  background-image: linear-gradient(to right, #fd738a, #f8cbd2); }
+  .piePagina h2 {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder; }
+  .piePagina .redes {
+    display: flex;
+    justify-content: center; }
+  .piePagina h3 {
+    font-size: x-small;
+    text-align: end;
+    font-weight: bolder; }
