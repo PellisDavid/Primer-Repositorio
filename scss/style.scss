@@ -50,6 +50,10 @@ main{
         max-width: max-content;
         color: black;
         font-weight: $fontW;
+        font-size: larger;
+        p{
+            font-size: medium;
+        }
     }
     .carrusel{
         margin: auto;
@@ -65,6 +69,256 @@ main{
 .piePagina{
     background-image: linear-gradient(to right, $bg-color1, $bg-color2);
     h2{
+        font-size: medium;
+        text-align: $align;
+        font-weight: $fontW;
+    }
+    .redes{
+        display: flex;
+        justify-content: $justCenter;
+        img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+    h3{
+        font-size: xx-small;
+        text-align: end;
+        font-weight: $fontW;
+    }
+}
+
+/*pages*/
+
+//grids
+
+.calzado, .ofertas, .otonioInvierno, .primaveraVerano{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "titulo"
+                         "primerDiv"
+                         "segundoDiv"
+                         "tercerDiv"
+                         "cuartoDiv"
+                         "quintoDiv"
+                         "sextoDiv";
+}
+
+h1{
+    grid-area: "titulo";
+    font-size: xx-large;
+    text-align: $align;
+    font-weight: $fontW;
+    text-decoration: $deco;
+}
+
+.tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
+    grid-area: "primerDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+.botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
+    grid-area: "segundoDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+.zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
+    grid-area: "tercerDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+.camperonNegro, .enteritoSeda{
+    grid-area: "cuartoDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+.camperaNegra, .conjuntoAngel{
+    grid-area: "quintoDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+.camperaFrizada, .conjuntoClasico{
+    grid-area: "sextoDiv";
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+/*media tablet*/
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .carrusel, .carousel-inner, .carousel-item, .carImg{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
+        display: grid;
+        gap: 2rem;
+        grid-template-areas: "titulo titulo"
+                             "primerDiv segundoDiv"
+                             "tercerDiv cuartoDiv"
+                             "quintoDiv sextoDiv";
+    }
+    
+    .titulo{
+        grid-area: "titulo";
+        font-size: xx-large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+    
+    .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
+        grid-area: "primerDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
+        grid-area: "segundoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
+        grid-area: "tercerDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperonNegro, .enteritoSeda{
+        grid-area: "cuartoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperaNegra, .conjuntoAngel{
+        grid-area: "quintoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperaFrizada, .conjuntoClasico{
+        grid-area: "sextoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+
+    h2{
         font-size: large;
         text-align: $align;
         font-weight: $fontW;
@@ -72,9 +326,146 @@ main{
     .redes{
         display: flex;
         justify-content: $justCenter;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     h3{
-        font-size: x-small;
+        font-size: xx-small;
+        text-align: end;
+        font-weight: $fontW;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .carrusel, .carousel-inner, .carousel-item, .carImg{
+        width: 36rem;
+        height: 38rem;
+    }
+
+    .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "titulo titulo titulo"
+                             "primerDiv segundoDiv tercerDiv"
+                             "cuartoDiv quintoDiv sextoDiv";
+    }
+    
+    h1{
+        grid-area: "titulo";
+        font-size: xx-large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+    
+    .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
+        grid-area: "primerDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
+        grid-area: "segundoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
+        grid-area: "tercerDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperonNegro, .enteritoSeda{
+        grid-area: "cuartoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperaNegra, .conjuntoAngel{
+        grid-area: "quintoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+    
+    .camperaFrizada, .conjuntoClasico{
+        grid-area: "sextoDiv";
+        margin: auto;
+        img{
+            width: $ancho;
+            height: $alto;
+        }
+        p{
+            font-size: large;
+            text-align: $align;
+            font-weight: $fontW;
+            text-decoration: $deco;
+        }
+    }
+
+    h2{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+    }
+    .redes{
+        display: flex;
+        justify-content: $justCenter;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h3{
+        font-size: xx-small;
         text-align: end;
         font-weight: $fontW;
     }

@@ -35,7 +35,10 @@ main {
     text-decoration: solid;
     max-width: max-content;
     color: black;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-size: larger; }
+    main .conocenos p {
+      font-size: medium; }
   main .carrusel {
     margin: auto; }
   main .carrusel, main .carousel-inner, main .carousel-item, main .carImg {
@@ -46,13 +49,292 @@ main {
 .piePagina {
   background-image: linear-gradient(to right, #fd738a, #f8cbd2); }
   .piePagina h2 {
-    font-size: large;
+    font-size: medium;
     text-align: center;
     font-weight: bolder; }
   .piePagina .redes {
     display: flex;
     justify-content: center; }
+    .piePagina .redes img {
+      width: 90%;
+      height: 90%; }
   .piePagina h3 {
-    font-size: x-small;
+    font-size: xx-small;
     text-align: end;
     font-weight: bolder; }
+
+/*pages*/
+.calzado, .ofertas, .otonioInvierno, .primaveraVerano {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "titulo" "primerDiv" "segundoDiv" "tercerDiv" "cuartoDiv" "quintoDiv" "sextoDiv"; }
+
+h1 {
+  grid-area: "titulo";
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: solid; }
+
+.tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina {
+  grid-area: "primerDiv";
+  margin: auto; }
+  .tacoAguja img, .zapatillasAltas img, .sacoBeige img, .conjuntoMusolina img {
+    width: 18rem;
+    height: 20rem; }
+  .tacoAguja p, .zapatillasAltas p, .sacoBeige p, .conjuntoMusolina p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+.botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda {
+  grid-area: "segundoDiv";
+  margin: auto; }
+  .botasOtoniales img, .remerasEstampadas img, .sacoGris img, .conjuntoSeda img {
+    width: 18rem;
+    height: 20rem; }
+  .botasOtoniales p, .remerasEstampadas p, .sacoGris p, .conjuntoSeda p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+.zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle {
+  grid-area: "tercerDiv";
+  margin: auto; }
+  .zapatillasDeportivas img, .jeanTejano img, .sacoMarron img, .enteritoWaffle img {
+    width: 18rem;
+    height: 20rem; }
+  .zapatillasDeportivas p, .jeanTejano p, .sacoMarron p, .enteritoWaffle p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+.camperonNegro, .enteritoSeda {
+  grid-area: "cuartoDiv";
+  margin: auto; }
+  .camperonNegro img, .enteritoSeda img {
+    width: 18rem;
+    height: 20rem; }
+  .camperonNegro p, .enteritoSeda p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+.camperaNegra, .conjuntoAngel {
+  grid-area: "quintoDiv";
+  margin: auto; }
+  .camperaNegra img, .conjuntoAngel img {
+    width: 18rem;
+    height: 20rem; }
+  .camperaNegra p, .conjuntoAngel p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+.camperaFrizada, .conjuntoClasico {
+  grid-area: "sextoDiv";
+  margin: auto; }
+  .camperaFrizada img, .conjuntoClasico img {
+    width: 18rem;
+    height: 20rem; }
+  .camperaFrizada p, .conjuntoClasico p {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+
+/*media tablet*/
+@media (min-width: 576px) and (max-width: 991px) {
+  .carrusel, .carousel-inner, .carousel-item, .carImg {
+    width: 20rem;
+    height: 30rem; }
+  .calzado, .ofertas, .otonioInvierno, .primaveraVerano {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "titulo titulo" "primerDiv segundoDiv" "tercerDiv cuartoDiv" "quintoDiv sextoDiv"; }
+  .titulo {
+    grid-area: "titulo";
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+  .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina {
+    grid-area: "primerDiv";
+    margin: auto; }
+    .tacoAguja img, .zapatillasAltas img, .sacoBeige img, .conjuntoMusolina img {
+      width: 18rem;
+      height: 20rem; }
+    .tacoAguja p, .zapatillasAltas p, .sacoBeige p, .conjuntoMusolina p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda {
+    grid-area: "segundoDiv";
+    margin: auto; }
+    .botasOtoniales img, .remerasEstampadas img, .sacoGris img, .conjuntoSeda img {
+      width: 18rem;
+      height: 20rem; }
+    .botasOtoniales p, .remerasEstampadas p, .sacoGris p, .conjuntoSeda p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle {
+    grid-area: "tercerDiv";
+    margin: auto; }
+    .zapatillasDeportivas img, .jeanTejano img, .sacoMarron img, .enteritoWaffle img {
+      width: 18rem;
+      height: 20rem; }
+    .zapatillasDeportivas p, .jeanTejano p, .sacoMarron p, .enteritoWaffle p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperonNegro, .enteritoSeda {
+    grid-area: "cuartoDiv";
+    margin: auto; }
+    .camperonNegro img, .enteritoSeda img {
+      width: 18rem;
+      height: 20rem; }
+    .camperonNegro p, .enteritoSeda p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperaNegra, .conjuntoAngel {
+    grid-area: "quintoDiv";
+    margin: auto; }
+    .camperaNegra img, .conjuntoAngel img {
+      width: 18rem;
+      height: 20rem; }
+    .camperaNegra p, .conjuntoAngel p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperaFrizada, .conjuntoClasico {
+    grid-area: "sextoDiv";
+    margin: auto; }
+    .camperaFrizada img, .conjuntoClasico img {
+      width: 18rem;
+      height: 20rem; }
+    .camperaFrizada p, .conjuntoClasico p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  h2 {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder; }
+  .redes {
+    display: flex;
+    justify-content: center; }
+    .redes img {
+      width: 100%;
+      height: 100%; }
+  h3 {
+    font-size: xx-small;
+    text-align: end;
+    font-weight: bolder; } }
+
+@media (min-width: 992px) {
+  .carrusel, .carousel-inner, .carousel-item, .carImg {
+    width: 36rem;
+    height: 38rem; }
+  .calzado, .ofertas, .otonioInvierno, .primaveraVerano {
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "titulo titulo titulo" "primerDiv segundoDiv tercerDiv" "cuartoDiv quintoDiv sextoDiv"; }
+  h1 {
+    grid-area: "titulo";
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: solid; }
+  .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina {
+    grid-area: "primerDiv";
+    margin: auto; }
+    .tacoAguja img, .zapatillasAltas img, .sacoBeige img, .conjuntoMusolina img {
+      width: 18rem;
+      height: 20rem; }
+    .tacoAguja p, .zapatillasAltas p, .sacoBeige p, .conjuntoMusolina p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda {
+    grid-area: "segundoDiv";
+    margin: auto; }
+    .botasOtoniales img, .remerasEstampadas img, .sacoGris img, .conjuntoSeda img {
+      width: 18rem;
+      height: 20rem; }
+    .botasOtoniales p, .remerasEstampadas p, .sacoGris p, .conjuntoSeda p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle {
+    grid-area: "tercerDiv";
+    margin: auto; }
+    .zapatillasDeportivas img, .jeanTejano img, .sacoMarron img, .enteritoWaffle img {
+      width: 18rem;
+      height: 20rem; }
+    .zapatillasDeportivas p, .jeanTejano p, .sacoMarron p, .enteritoWaffle p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperonNegro, .enteritoSeda {
+    grid-area: "cuartoDiv";
+    margin: auto; }
+    .camperonNegro img, .enteritoSeda img {
+      width: 18rem;
+      height: 20rem; }
+    .camperonNegro p, .enteritoSeda p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperaNegra, .conjuntoAngel {
+    grid-area: "quintoDiv";
+    margin: auto; }
+    .camperaNegra img, .conjuntoAngel img {
+      width: 18rem;
+      height: 20rem; }
+    .camperaNegra p, .conjuntoAngel p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  .camperaFrizada, .conjuntoClasico {
+    grid-area: "sextoDiv";
+    margin: auto; }
+    .camperaFrizada img, .conjuntoClasico img {
+      width: 18rem;
+      height: 20rem; }
+    .camperaFrizada p, .conjuntoClasico p {
+      font-size: large;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: solid; }
+  h2 {
+    font-size: large;
+    text-align: center;
+    font-weight: bolder; }
+  .redes {
+    display: flex;
+    justify-content: center; }
+    .redes img {
+      width: 100%;
+      height: 100%; }
+  h3 {
+    font-size: xx-small;
+    text-align: end;
+    font-weight: bolder; } }
