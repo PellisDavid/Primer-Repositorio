@@ -19,9 +19,53 @@ $nlColor: pink;
 //logoHome
 $logSize: 40%;
 
-//carrusel
+//carrusel/img
 $ancho: 18rem;
 $alto: 20rem;
 
 //justificar centro
 $justCenter: center;
+
+//mixin
+
+@mixin img-main ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin img-p {
+    margin: auto;
+    img{
+        width: $ancho;
+        height: $alto;
+    }
+    p{
+        font-size: large;
+        text-align: $align;
+        font-weight: $fontW;
+        text-decoration: $deco;
+    }
+}
+
+//extend
+%footer{
+    h2{
+        text-align: $align;
+        font-weight: $fontW;
+    }
+    .redes{
+        display: flex;
+        justify-content: $justCenter;
+    }
+    h3{
+        font-size: xx-small;
+        text-align: end;
+        font-weight: $fontW;
+    }
+}
+
+%textos{
+    text-align: $align;
+    font-weight: $fontW;
+    text-decoration: $deco;
+}

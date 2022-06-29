@@ -17,9 +17,8 @@ header{
     flex-wrap: nowrap;
     .menu{
         background-image: linear-gradient(to right, $bg-color1, $bg-color2);
-        text-align: $align;
+        @extend %textos;
         padding: 5px;
-        font-weight: $fontW;
         .logoHome{
             max-width: $logSize;
             max-height: $logSize;
@@ -45,11 +44,9 @@ main{
     background-size: cover;
     padding: 10px;
     .conocenos{
-        text-align: $align;
-        text-decoration: $deco;
+        @extend %textos;
         max-width: max-content;
         color: black;
-        font-weight: $fontW;
         font-size: larger;
         p{
             font-size: medium;
@@ -59,8 +56,7 @@ main{
         margin: auto;
     }
     .carrusel, .carousel-inner, .carousel-item, .carImg{
-        width: $ancho;
-        height: $alto;
+        @include img-main (18rem, 20rem);
     }
 }
 
@@ -68,138 +64,71 @@ main{
 
 .piePagina{
     background-image: linear-gradient(to right, $bg-color1, $bg-color2);
+    @extend %footer;
     h2{
         font-size: medium;
-        text-align: $align;
-        font-weight: $fontW;
     }
     .redes{
-        display: flex;
-        justify-content: $justCenter;
         img{
             width: 90%;
             height: 90%;
         }
     }
-    h3{
-        font-size: xx-small;
-        text-align: end;
-        font-weight: $fontW;
-    }
 }
 
 /*pages*/
+
+main{
+    .titulo{
+        grid-area: "titulo";
+        font-size: xx-large;
+        @extend %textos;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
 
 //grids
 
 .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
     display: grid;
-    gap: 1rem;
-    grid-template-areas: "titulo"
-                         "primerDiv"
+    gap: 1.5rem;
+    grid-template-areas: "primerDiv"
                          "segundoDiv"
                          "tercerDiv"
                          "cuartoDiv"
                          "quintoDiv"
-                         "sextoDiv";
-}
-
-h1{
-    grid-area: "titulo";
-    font-size: xx-large;
-    text-align: $align;
-    font-weight: $fontW;
-    text-decoration: $deco;
+                         "sextoDiv";                        
 }
 
 .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
     grid-area: "primerDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
     grid-area: "segundoDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
     grid-area: "tercerDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 .camperonNegro, .enteritoSeda{
     grid-area: "cuartoDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 .camperaNegra, .conjuntoAngel{
     grid-area: "quintoDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 .camperaFrizada, .conjuntoClasico{
     grid-area: "sextoDiv";
-    margin: auto;
-    img{
-        width: $ancho;
-        height: $alto;
-    }
-    p{
-        font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
-    }
+    @include img-p;
 }
 
 /*media tablet*/
@@ -207,266 +136,100 @@ h1{
 @media (min-width: 576px) and (max-width: 991px) {
 
     .carrusel, .carousel-inner, .carousel-item, .carImg{
-        width: 20rem;
-        height: 30rem;
+        @include img-main (20rem, 30rem);
     }
 
     .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
         display: grid;
-        gap: 2rem;
-        grid-template-areas: "titulo titulo"
-                             "primerDiv segundoDiv"
+        gap: 2.5rem;
+        grid-template-areas: "primerDiv segundoDiv"
                              "tercerDiv cuartoDiv"
-                             "quintoDiv sextoDiv";
-    }
-    
-    .titulo{
-        grid-area: "titulo";
-        font-size: xx-large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
+                             "quintoDiv sextoDiv";                       
     }
     
     .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
         grid-area: "primerDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
         grid-area: "segundoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
         grid-area: "tercerDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperonNegro, .enteritoSeda{
         grid-area: "cuartoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperaNegra, .conjuntoAngel{
         grid-area: "quintoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperaFrizada, .conjuntoClasico{
         grid-area: "sextoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
 
-    h2{
+    .piePagina{
+        h2{
         font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-    }
-    .redes{
-        display: flex;
-        justify-content: $justCenter;
-        img{
-            width: 100%;
-            height: 100%;
         }
-    }
-    h3{
-        font-size: xx-small;
-        text-align: end;
-        font-weight: $fontW;
+        .redes{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
 @media (min-width: 992px) {
 
     .carrusel, .carousel-inner, .carousel-item, .carImg{
-        width: 36rem;
-        height: 38rem;
+        @include img-main (36rem, 38rem);
     }
 
     .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
         display: grid;
-        gap: 3rem;
-        grid-template-areas: "titulo titulo titulo"
-                             "primerDiv segundoDiv tercerDiv"
-                             "cuartoDiv quintoDiv sextoDiv";
-    }
-    
-    h1{
-        grid-area: "titulo";
-        font-size: xx-large;
-        text-align: $align;
-        font-weight: $fontW;
-        text-decoration: $deco;
+        gap: 3.5rem;
+        grid-template-areas: "primerDiv segundoDiv tercerDiv"
+                             "cuartoDiv quintoDiv sextoDiv";                       
     }
     
     .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
         grid-area: "primerDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
         grid-area: "segundoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
         grid-area: "tercerDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperonNegro, .enteritoSeda{
         grid-area: "cuartoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperaNegra, .conjuntoAngel{
         grid-area: "quintoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
     
     .camperaFrizada, .conjuntoClasico{
         grid-area: "sextoDiv";
-        margin: auto;
-        img{
-            width: $ancho;
-            height: $alto;
-        }
-        p{
-            font-size: large;
-            text-align: $align;
-            font-weight: $fontW;
-            text-decoration: $deco;
-        }
     }
 
-    h2{
+    .piePagina{
+        h2{
         font-size: large;
-        text-align: $align;
-        font-weight: $fontW;
-    }
-    .redes{
-        display: flex;
-        justify-content: $justCenter;
-        img{
-            width: 100%;
-            height: 100%;
         }
-    }
-    h3{
-        font-size: xx-small;
-        text-align: end;
-        font-weight: $fontW;
+        .redes{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
