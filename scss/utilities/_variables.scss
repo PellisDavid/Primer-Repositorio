@@ -7,6 +7,8 @@ $font-family: 'Gentium Plus', serif;
 //bg header y footer
 $bg-color1: rgb(253, 115, 138);
 $bg-color2: rgb(248, 203, 210);
+$bg-color3: rgb(113, 113, 212);
+$bg-color4: rgb(138, 245, 209);
 
 //prop de los textos
 $align: center;
@@ -68,4 +70,29 @@ $justCenter: center;
     text-align: $align;
     font-weight: $fontW;
     text-decoration: $deco;
+}
+
+%botonera{
+    justify-content: $justCenter;
+    width: 30%;
+    height: 2rem;
+    @extend %textos;
+    font-size: small;
+    box-shadow: 1px 1px black;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, $bg-color1, $bg-color2);
+    color: black;
+    margin: auto;
+    img{
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        justify-content: $justCenter;
+    }
+}
+
+%flexPage{
+    display: flex;
+    flex-direction: column;
 }

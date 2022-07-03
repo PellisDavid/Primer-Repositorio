@@ -86,6 +86,15 @@ main{
         margin-top: 2rem;
         margin-bottom: 4rem;
     }
+
+    .botonera{
+        @extend %botonera;
+    }
+
+    .botonera:hover{
+        color: pink;
+        background-image: linear-gradient(to right, $bg-color3, $bg-color4);
+    }
 }
 
 //grids
@@ -104,31 +113,37 @@ main{
 .tacoAguja, .zapatillasAltas, .sacoBeige, .conjuntoMusolina{
     grid-area: "primerDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 .botasOtoniales, .remerasEstampadas, .sacoGris, .conjuntoSeda{
     grid-area: "segundoDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 .zapatillasDeportivas, .jeanTejano, .sacoMarron, .enteritoWaffle{
     grid-area: "tercerDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 .camperonNegro, .enteritoSeda{
     grid-area: "cuartoDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 .camperaNegra, .conjuntoAngel{
     grid-area: "quintoDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 .camperaFrizada, .conjuntoClasico{
     grid-area: "sextoDiv";
     @include img-p;
+    @extend %flexPage;
 }
 
 /*media tablet*/
@@ -184,10 +199,23 @@ main{
     }
 }
 
+/*media desktop*/
+
 @media (min-width: 992px) {
+
+    .carrusel{
+        margin-top: 1rem;
+    }
 
     .carrusel, .carousel-inner, .carousel-item, .carImg{
         @include img-main (36rem, 38rem);
+    }
+
+    .conocenos{
+        p{
+            width: 50%;
+            margin: auto;
+        }
     }
 
     .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
