@@ -73,11 +73,13 @@ main {
     font-size: larger; }
     main .conocenos p {
       font-size: medium; }
-  main .carrusel {
-    margin: auto; }
-  main .carrusel, main .carousel-inner, main .carousel-item, main .carImg {
-    width: 18rem;
-    height: 20rem; }
+
+.carrusel {
+  margin: auto; }
+
+.carrusel, .carousel-inner, .carousel-item, .carImg {
+  width: 18rem;
+  height: 20rem; }
 
 /*footer*/
 .piePagina {
@@ -177,9 +179,9 @@ main .botonera:hover {
     text-decoration: solid; }
 
 /*media tablet*/
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 653px) and (max-width: 1017px) {
   .carrusel, .carousel-inner, .carousel-item, .carImg {
-    width: 20rem;
+    width: 25rem;
     height: 30rem; }
   .calzado, .ofertas, .otonioInvierno, .primaveraVerano {
     display: grid;
@@ -204,12 +206,12 @@ main .botonera:hover {
     height: 100%; } }
 
 /*media desktop*/
-@media (min-width: 992px) {
+@media (min-width: 1018px) {
   .carrusel {
     margin-top: 1rem; }
   .carrusel, .carousel-inner, .carousel-item, .carImg {
-    width: 36rem;
-    height: 38rem; }
+    width: 30rem;
+    height: 36rem; }
   .conocenos p {
     width: 50%;
     margin: auto; }

@@ -52,12 +52,13 @@ main{
             font-size: medium;
         }
     }
-    .carrusel{
-        margin: auto;
-    }
-    .carrusel, .carousel-inner, .carousel-item, .carImg{
-        @include img-main (18rem, 20rem);
-    }
+}
+
+.carrusel{
+    margin: auto;
+}
+.carrusel, .carousel-inner, .carousel-item, .carImg{
+    @include img-main (18rem, 20rem);
 }
 
 /*footer*/
@@ -148,10 +149,10 @@ main{
 
 /*media tablet*/
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 653px) and (max-width: 1017px) {
 
     .carrusel, .carousel-inner, .carousel-item, .carImg{
-        @include img-main (20rem, 30rem);
+        @include img-main (25rem, 30rem);
     }
 
     .calzado, .ofertas, .otonioInvierno, .primaveraVerano{
@@ -201,14 +202,14 @@ main{
 
 /*media desktop*/
 
-@media (min-width: 992px) {
+@media (min-width: 1018px) {
 
     .carrusel{
         margin-top: 1rem;
     }
 
     .carrusel, .carousel-inner, .carousel-item, .carImg{
-        @include img-main (36rem, 38rem);
+        @include img-main (30rem, 36rem);
     }
 
     .conocenos{
