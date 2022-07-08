@@ -235,4 +235,6 @@ main .botonera:hover {
     font-size: large; }
   .piePagina .redes img {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  .piePagina h3 {
+    font-size: x-small; } }
